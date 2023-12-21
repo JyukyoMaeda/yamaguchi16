@@ -1,0 +1,139 @@
+// フレックス
+.c-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include min(768){
+		flex-wrap: nowrap;
+	}
+	li{
+		width: 100%;
+		@include min(768){
+			width: 48%;
+		}
+	}
+	// 反転
+	&.-reverse{
+		@include min(768){
+			flex-direction: row-reverse;
+		}
+	}
+	&.-s-reverse{
+		@include max(768){
+			flex-direction: row-reverse;
+		}
+	}
+	&.-spa-b{
+		@include min(768){
+			justify-content: space-between !important;
+		}
+	}
+
+
+	&.-column2{
+		flex-wrap: wrap !important;
+		justify-content: start;
+		li{
+			position: relative;
+			@include max(768){
+				width: 100%;
+			}
+			@include min(768){
+				width: calc(50% - 5px);
+				&:nth-child(odd){
+					margin-right: 5px;
+				}
+				&:nth-child(even){
+					margin-left: 5px;
+
+				}
+			}
+		}
+
+	}
+	&.-navArea{
+		width: 100%;
+		flex-wrap: nowrap;
+		@include min(768){
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.navLists{
+			&:nth-child(1){
+				width: 100%;
+				@include min(768){
+					width: 50%;
+				}
+			}
+			&:nth-child(2){
+				@include min(768){
+					width: 25%;
+				}
+			}
+		}
+	}
+	&.-page-nav{
+		flex-wrap: wrap;
+		@include max(768){
+			width: 90%;
+			margin: auto;
+			justify-content: left;
+		}
+		@include min(768){flex-wrap: nowrap;}
+		li{
+			width: calc(100% / 3);
+			height: auto;
+			a{padding: 1% 2%;}
+			@include max(768){margin: 5px 0;}
+			@include min(768){
+				width: calc(100% / 6);
+				a{padding: 10% 2%;}
+			}
+			@include max(768){
+				position: relative;
+				&::before{
+					content:"";
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 80%;
+					background: #720000;
+				}
+				&:nth-child(3),
+				&:nth-child(5){
+					&::after{
+						content:"";
+						position: absolute;
+						top: 50%;
+						right: 0;
+						transform: translateY(-50%);
+						width: 1px;
+						height: 80%;
+						background: #720000;
+					}
+				}
+			}
+		}
+	}
+	&.-contact-nav{
+		li{
+			@include min(768){
+				width: 33.3333%;
+				&:nth-child(1){
+					background: #e6e6e6;
+				}
+				&:nth-child(2){
+					background: #eb8945;
+				}
+				&:nth-child(3){
+					background: #ea656a;
+				}
+				a{padding: 9% 7%;}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,156 @@
+// コンテンツ
+.c-container{
+	width: 100vw;
+	height: auto;
+}
+
+.c-contents{
+	position: relative;
+	.imgBox{
+		&.-sp{
+			@include max(768){
+				width: 100vw;
+				height: 710px;
+			}
+		}
+	}
+
+	&.-imgBg{//背景画像
+		.c-contentsBox{//背景要素内 > 設置場所
+			position: absolute;
+			&.-center{ // 基本
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+			}
+		}
+	}
+
+	&.w1100{
+		@include min(768){
+			width: 80%;
+			max-width: 1100px;
+			margin: auto;
+		}
+		@include min(1600){
+			width: 65%;
+			// width: 57.4%;
+		}
+	}
+	&.w95s{
+		@include max(768){
+			width: 95%;
+			margin: auto;
+		}
+	}
+	&.w90s{
+		@include max(768){
+			width: 90%;
+			margin: auto;
+		}
+	}
+	&.w85s{
+		@include max(768){
+			width: 85%;
+			margin: auto;
+		}
+	}
+	&.w80s{
+		@include max(768){
+			width: 80%;
+			margin: auto;
+		}
+	}
+}
+
+	// ロゴ関係
+	.logoArea{
+		margin: auto;
+		width: 32%;
+		@include min(768){
+			width: 18%;
+		}
+		@include min(1600){
+			width: 12%;
+		}
+		&.-c-In{
+			width: auto;
+			margin-left: 0;
+			img{
+				width: 7%;
+				@include min(768){
+					width: 10%;
+				}
+			}
+		}
+		&.-mugen{
+			@include min(768){
+				width: 10%;
+			}
+			@include min(1600){
+				width: 13%;
+			}
+		}
+	}
+	// タイトル関係
+	.titleArea{
+			&.-Concept,
+			&.-Planning,
+			&.-Location{
+				img{
+					width: 33%;
+					@include min(768){
+						width: 33%;
+					}
+				}
+			}
+			&.-ForExample{
+				img{
+					width: 43%;
+					@include min(768){
+						width: 33%;
+					}
+				}
+			}
+			&.-PrivateSkyTerrace{
+				img{
+					width: 68%;
+					@include min(768){
+						width: 53%;
+					}
+				}
+			}
+			&.-MakefullGallery{
+				img{
+					width: 55%;
+					@include min(768){
+						width: 53%;
+					}
+				}
+			}
+			&.-LifeInformation{
+				img{
+					width: 55%;
+					@include min(768){
+						width: 30%;
+					}
+				}
+			}
+		}
+	// スペル
+	.spell{
+		width: 33%;
+		@include min(768){
+			width: 33%;
+		}
+	}
+	// リサーチページ > 住宅地視察
+	// .sec-imgBox{
+	// 	position: relative;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	img{
+	// 		position: absolute;
+	// 	}
+	// }
