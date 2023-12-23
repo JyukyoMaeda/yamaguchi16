@@ -117,4 +117,82 @@
 			}
 		}
 	}
+	&.-p04{
+        @include min(768){
+            .-cover{
+                .-cover-btmImg,
+                .-cover-topImg,
+                .-cover-boxText,
+                .-cover-boxBtn{
+                    transition: all .5s;
+                }
+                &:hover{
+                    .-cover-topImg{
+                        opacity: 0;
+                        transition-duration: 0.2s;
+                        // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                    }
+                    .-cover-btmImg{
+                        transform: scale(1.1);
+                    }
+                    .-cover-boxText,
+                    .-top-boxBtn{
+                        filter: drop-shadow(3px 1.5px 2.5px rgba(0,0,0,0.6));
+                    }
+                }
+            }
+        }
+        .-cover{
+            opacity: 1;
+            transition-duration: 0.5s;
+            overflow: hidden;
+            @include min(768){
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+        &_v02{
+            @include min(768){
+                .-cover{
+                    .-cover-topImg,
+                    .-cover-boxText,
+                    .-cover-boxBtn{
+                        opacity: 0;
+                    }
+                    
+
+                    .-cover-btmImg,
+                    .-cover-topImg,
+                    .-cover-boxText,
+                    .-cover-boxBtn{
+                        transition: all .5s;
+                    }
+                    &:hover{
+                        .-cover-topImg,
+                        .-cover-boxText,
+                        .-cover-boxBtn{
+                            opacity: 1;
+                            transition-duration: 0.2s;
+                            // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                        }
+                        .-cover-btmImg{
+                            transform: scale(1.1);
+                        }
+                        .-cover-boxText,
+                        .-top-boxBtn{
+                            filter: drop-shadow(3px 1.5px 2.5px rgba(0,0,0,0.6));
+                        }
+                    }
+                }
+            }
+            .-cover{
+                opacity: 1;
+                transition-duration: 0.5s;
+                overflow: hidden;
+                @include min(768){
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+    }
 }

@@ -8,7 +8,7 @@
 // 768px以下
 .mgb-20s {@include max(768){margin-bottom: -20% !important;}}
 .mgb-10s {@include max(768){margin-bottom: -10% !important;}}
-.mgb-5s  {@include max(768){margin-bottom: -5% !important;}}
+.mgb-5s  {@include max(768){margin-bottom:  -5% !important;}}
 
 .mgb1s  {@include max(768){margin-bottom: 1% !important;}}
 .mgb2s  {@include max(768){margin-bottom: 2% !important;}}
@@ -112,6 +112,11 @@
 .pdt8s  {@include max(768){padding-top: 8% !important;}}
 .pdt9s  {@include max(768){padding-top: 9% !important;}}
 .pdt10s {@include max(768){padding-top:10% !important;}}
+.pdt11s {@include max(768){padding-top:11% !important;}}
+.pdt12s {@include max(768){padding-top:12% !important;}}
+.pdt13s {@include max(768){padding-top:13% !important;}}
+.pdt14s {@include max(768){padding-top:14% !important;}}
+.pdt15s {@include max(768){padding-top:15% !important;}}
 
 // 768px以上
 .pdt0  {@include min(768){padding-top: 0  !important;}}
