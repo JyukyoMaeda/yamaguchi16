@@ -24,6 +24,36 @@
 				transform: translate(-50%, -50%);
 				width: 100%;
 			}
+
+			// SP > 下側ボタン
+			&.-gaiyouBtn{
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 23%;
+				height: 100%;
+			}
+			&.-seikyuBtn{
+				top: 50%;
+				left: 23%;
+				transform: translateY(-50%);
+				width: 22.8%;
+				height: 100%;
+			}
+			&.-yoyakuBtn{
+				top: 50%;
+				left: 45.8%;
+				transform: translateY(-50%);
+				width: 22.8%;
+				height: 100%;
+			}
+			&.-telBtn{
+				top: 50%;
+				left: 68.6%;
+				transform: translateY(-50%);
+				width: 31.4%;
+				height: 100%;
+			}
 		}
 		&.-cover{//特殊
 			.-cover-btmImg,

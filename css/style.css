@@ -19,8 +19,15 @@ ul {
 
 body {
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   animation: fadeAnime 2s forwards;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 img {
@@ -455,6 +462,18 @@ p.Information::after, span.Information::after, a.Information::after {
 		*基本縦方向の幅は、下方側で調整すること。
 		*アンカーリンクの表示調整用には「paddig-top」を使用すること。
 ------------------------------------------------------------------------ */
+@media (width >= 768px) {
+  .mgt10 {
+    margin-top: 6%;
+  }
+}
+
+@media (768px >= width) {
+  .mgt11s {
+    margin-top: 11%;
+  }
+}
+
 @media (768px >= width) {
   .mgb-20s {
     margin-bottom: -20% !important;
@@ -566,6 +585,24 @@ p.Information::after, span.Information::after, a.Information::after {
 @media (768px >= width) {
   .mgb30s {
     margin-bottom: 30% !important;
+  }
+}
+
+@media (768px >= width) {
+  .mgb35s {
+    margin-bottom: 35% !important;
+  }
+}
+
+@media (768px >= width) {
+  .mgb40s {
+    margin-bottom: 40% !important;
+  }
+}
+
+@media (768px >= width) {
+  .mgb45s {
+    margin-bottom: 45% !important;
   }
 }
 
@@ -2008,6 +2045,18 @@ button.swiper-pagination-bullet {
   height: auto;
 }
 
+.c-fixed {
+  position: fixed;
+  left: 0;
+  z-index: 9999;
+}
+.c-fixed.-top {
+  top: 0;
+}
+.c-fixed.-btm {
+  bottom: 0;
+}
+
 .c-header {
   width: 100vw;
   height: auto;
@@ -2412,6 +2461,34 @@ button.swiper-pagination-bullet {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+.c-contents.-imgBg .c-contentsBox.-gaiyouBtn {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 23%;
+  height: 100%;
+}
+.c-contents.-imgBg .c-contentsBox.-seikyuBtn {
+  top: 50%;
+  left: 23%;
+  transform: translateY(-50%);
+  width: 22.8%;
+  height: 100%;
+}
+.c-contents.-imgBg .c-contentsBox.-yoyakuBtn {
+  top: 50%;
+  left: 45.8%;
+  transform: translateY(-50%);
+  width: 22.8%;
+  height: 100%;
+}
+.c-contents.-imgBg .c-contentsBox.-telBtn {
+  top: 50%;
+  left: 68.6%;
+  transform: translateY(-50%);
+  width: 31.4%;
+  height: 100%;
+}
 .c-contents.-imgBg.-cover .-cover-btmImg,
 .c-contents.-imgBg.-cover .-cover-topImg,
 .c-contents.-imgBg.-cover .-top-boxBtn,
@@ -2699,9 +2776,16 @@ button.swiper-pagination-bullet {
     margin-left: 20px;
   }
 }
+.c-flex.-col04 li {
+  width: 20%;
+}
+.c-flex.-col04 li:last-child {
+  width: 28%;
+}
 .c-flex.-navArea {
   width: 100%;
   flex-wrap: nowrap;
+  background: white;
 }
 @media (width >= 768px) {
   .c-flex.-navArea {
@@ -2796,7 +2880,8 @@ button.swiper-pagination-bullet {
   .c-flex.-contact-nav li:nth-child(3) {
     background: #ea656a;
   }
-  .c-flex.-contact-nav li a {
+  .c-flex.-contact-nav li a,
+  .c-flex.-contact-nav li label {
     padding: 9% 7%;
   }
 }

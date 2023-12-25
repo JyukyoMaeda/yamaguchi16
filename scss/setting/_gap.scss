@@ -5,6 +5,17 @@
 		*アンカーリンクの表示調整用には「paddig-top」を使用すること。
 ------------------------------------------------------------------------ */
 
+.mgt10{
+	@include min(768){
+		margin-top: 6%;
+	}
+}
+.mgt11s{
+	@include max(768){
+		margin-top: 11%;
+	}
+}
+
 // 768px以下
 .mgb-20s {@include max(768){margin-bottom: -20% !important;}}
 .mgb-10s {@include max(768){margin-bottom: -10% !important;}}
@@ -27,6 +38,11 @@
 .mgb20s {@include max(768){margin-bottom: 20% !important;}}
 .mgb25s {@include max(768){margin-bottom: 25% !important;}}
 .mgb30s {@include max(768){margin-bottom: 30% !important;}}
+.mgb35s {@include max(768){margin-bottom: 35% !important;}}
+.mgb40s {@include max(768){margin-bottom: 40% !important;}}
+.mgb45s {@include max(768){margin-bottom: 45% !important;}}
+
+
 
 // 768px以上
 .mgb-20 {@include min(768){margin-bottom: -20% !important;}}

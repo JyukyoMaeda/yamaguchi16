@@ -51,9 +51,18 @@
 		}
 
 	}
+	&.-col04{
+		li{
+			width: 20%;
+			&:last-child{
+				width: 28%;
+			}
+		}
+	}
 	&.-navArea{
 		width: 100%;
 		flex-wrap: nowrap;
+		background: white;
 		@include min(768){
 			flex-wrap: nowrap;
 			justify-content: space-between;
@@ -131,7 +140,9 @@
 				&:nth-child(3){
 					background: #ea656a;
 				}
-				a{padding: 9% 7%;}
+				a,
+				label
+				{padding: 9% 7%;}
 			}
 		}
 	}

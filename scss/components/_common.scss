@@ -5,3 +5,15 @@
     width: 100%;
     height: auto;
 }
+
+.c-fixed{
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    &.-top{
+        top: 0;
+    }
+    &.-btm{
+        bottom: 0;
+    }
+}

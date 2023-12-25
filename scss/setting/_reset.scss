@@ -17,8 +17,15 @@ ul{
 }
 body{
 	width: 100%;
+	height: 100%;
 	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 	animation: fadeAnime 2s forwards;
+	&::-webkit-scrollbar{
+		display:none;
+	}
 }
 img{
 	width: 100%;
