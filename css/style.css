@@ -2546,6 +2546,18 @@ button.swiper-pagination-bullet {
     width: 22.5%;
   }
 }
+.c-contents.-content05 .contentBox {
+  width: 90%;
+  margin: auto;
+  padding: 10% 0;
+}
+@media (width >= 768px) {
+  .c-contents.-content05 .contentBox {
+    width: 63%;
+    max-width: 1200px;
+    padding: 5% 0;
+  }
+}
 
 @media (width >= 768px) {
   .w1100 {
@@ -3430,7 +3442,33 @@ a {
   width: 100vw;
   height: 100vh;
 }
+.p-top main {
+  margin-top: 25%;
+}
+@media (width >= 768px) {
+  .p-top main {
+    margin-top: 6%;
+  }
+}
 .p-top .testBox {
+  width: 100vw;
+  height: 150vh;
+  background: rgba(0, 0, 0, 0.392);
+}
+
+.p-location {
+  width: 100vw;
+  height: 100vh;
+}
+.p-location main {
+  margin-top: 25%;
+}
+@media (width >= 768px) {
+  .p-location main {
+    margin-top: 5%;
+  }
+}
+.p-location .testBox {
   width: 100vw;
   height: 150vh;
   background: rgba(0, 0, 0, 0.392);

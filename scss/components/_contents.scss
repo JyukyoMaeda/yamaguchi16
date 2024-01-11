@@ -114,6 +114,18 @@
 			}
 		}
 	}
+	&.-content05{// 住協のグランシア
+		.contentBox{
+			width: 90%;
+			margin: auto;
+			padding: 10% 0;
+			@include min(768){
+				width: 63%;
+    			max-width: 1200px;
+				padding: 5% 0;
+			}
+		}
+	}
 }
 .w1100{
 	@include min(768){
