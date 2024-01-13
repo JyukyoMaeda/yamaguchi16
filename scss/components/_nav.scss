@@ -1,5 +1,22 @@
 
 // ヘッダー　> ナビ
 .navArea{
-	
+	// li
+    .active{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 65%;
+            height: 1px;
+            background: $site-color01;
+            @include min(768){
+                top: 75%;
+                width: 85%;
+            }
+        }
+    }
 }

@@ -54,6 +54,30 @@
 				width: 31.4%;
 				height: 100%;
 			}
+
+			// 施工事例
+			&.-planBtn{
+				top: 86%;
+				left: 74.5%;
+				transform: translate(-50%, -50%);
+				width: 38%;
+				@include min(768){
+					top: 82%;
+					left: 73.5%;
+					width: 16%;
+				}
+			}
+			&.-planBtn02{
+				top: 85%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				@include min(768){
+					top: 82%;
+					left: 73.5%;
+					width: 16%;
+				}
+			}
 		}
 		&.-cover{//特殊
 			.-cover-btmImg,
@@ -115,6 +139,9 @@
 		}
 	}
 	&.-content05{// 住協のグランシア
+		&.-gray{
+			background: #efefef;
+		}
 		.contentBox{
 			width: 90%;
 			margin: auto;
@@ -125,6 +152,17 @@
 				padding: 5% 0;
 			}
 		}
+	}
+}
+.w1200{
+	@include min(768){
+		width: 80%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	@include min(1600){
+		width: 60%;
+		// width: 57.4%;
 	}
 }
 .w1100{
@@ -140,25 +178,25 @@
 }
 .w95s{
 	@include max(768){
-		width: 95%;
+		width: 95% !important;
 		margin: auto;
 	}
 }
 .w90s{
 	@include max(768){
-		width: 90%;
+		width: 90% !important;
 		margin: auto;
 	}
 }
 .w85s{
 	@include max(768){
-		width: 85%;
+		width: 85% !important;
 		margin: auto;
 	}
 }
 .w80s{
 	@include max(768){
-		width: 80%;
+		width: 80% !important;
 		margin: auto;
 	}
 }

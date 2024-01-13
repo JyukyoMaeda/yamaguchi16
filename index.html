@@ -42,7 +42,7 @@
                 <img class="sp" src="images/bg/header_s.jpg" alt="グランシア西所沢～所沢山口16期～ / 西武池袋線「西所沢」駅まで徒歩14～15分、「小手指」駅まで自転車で約7分">
             </div>
         </header>
-        <nav class="" style="box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.466);">
+        <nav class="navArea" style="box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.466);">
             <ul class="c-flex -navArea">
                 <li class="navLists">
                     <ul class="c-flex -page-nav">
@@ -252,7 +252,7 @@
             </div>
         </div>
         <!-- お問合せ -->
-        <ul class="c-flex -column2 w1100 w90s">
+        <ul class="c-flex -column2 w1100 w90s mgb10 mgb10s">
             <li class="mgb3s">
                 <a href="https://www.jyu-g.co.jp/contents/tour?checkid=712894369"><img src="images/bg/content_btn01.jpg" alt="現地来場予約受付中"></a>
             </li>
@@ -261,23 +261,35 @@
             </li>
         </ul>
 
-        <!-- ポップアップa > 物件概要 -->
-        <!-- <div class="c-contents logoArea mgb2 mgb2s a-sc-fade">
-            <label class="popup popup-open" for="popup">
-                <div class="c-link -text">
-                    <div class="logoBox mgb20 mgb20s">
-                        <img src="images/SVG/logo_text.svg" alt="Makefull">
-                    </div>
-                    <div class="textBox">
-                        <p class="s-L mgb3 mgb3s">物件概要</p>
-                    </div>
-                </div>
+        <!-- 概要ボタン -->
+        <div class="c-btn -gaiyo mgb5s">
+            <div class="c-btn-inner">
+                <label class="popup popup-open " for="popup">
+                    <span class="s-L">建築条件付土地</span>物件概要はこちら ＞
+                </label>
+            </div>
+        </div>
+        <!-- 固定エリア > ポップアップ -->
+        <!-- 01.物件概要 -->
+        <input type="checkbox" id="popup" >
+        <label class="popup-overlay" for="popup"></label>
+        <div class="popup-window">
+            <!-- 閉じるボタン -->
+            <label class="popup-close" for="popup">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                    <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                </svg>
             </label>
-        </div> -->
+            <!-- iframe -->
+            <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/物件ナンバー"></iframe>
+        </div>
+        <!-- // 固定アイテム > ポップアップ -->
+
     </main>
     <!-- //コンテンツ -->
     <!-- footer -->
-    <footer id="footer" class="c-footer mgb3 mgb45s">
+    <footer id="footer" class="c-footer mgb3 mgb30s">
         <div class="c-footer__shopArea mgb1 mgb1s">
             <ul class="c-footer__shopFlex">
                 <li><a href="https://www.jyu-g.co.jp/contents/office_info/8" target="_blank"><img src="images/logo/SVG/kotesashi-shop.svg" alt="住協 小手指支店 情報"></a></li>
@@ -291,22 +303,6 @@
     </footer>
     <!-- //footer -->
 
-    <!-- 固定エリア > ポップアップ -->
-                <!-- 01.物件概要 -->
-                <input type="checkbox" id="popup" >
-                <label class="popup-overlay" for="popup"></label>
-                <div class="popup-window">
-                    <!-- 閉じるボタン -->
-                    <label class="popup-close" for="popup">
-                        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                            <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                        </svg>
-                    </label>
-                    <!-- iframe -->
-                    <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712894369"></iframe>
-                </div>
-    <!-- //固定アイテム -->
     <script>
         var mainSwiper = new Swiper(".swiperMain", {
             effect: 'fade',

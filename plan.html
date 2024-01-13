@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>周辺環境 | グランシア西所沢 ～所沢山口 19家族の新街区～</title>
+    <title>自由設計について | グランシア西所沢 ～所沢山口 19家族の新街区～</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" type="image/png" href="images/apple-touch-icon.png">
     <!-- デプロイ前に確認・サンプル -->
@@ -14,7 +14,8 @@
     <!--// デプロイ前に確認・サンプル -->
 
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="js/swiper.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/luminous.min.js"></script>
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,7 +32,7 @@
         }
     </script>
 </head>
-<body class="p-location">
+<body class="p-plan">
 
     <!-- header / 固定 -->
     <div class="c-fixed -top">
@@ -47,9 +48,9 @@
                     <ul class="c-flex -page-nav">
                         <li><a class="s-M -ws-n" href="concept.html">CONCEPT</a></li>
                         <li><a class="s-M -ws-n" href="land.html">LAND</a></li>
-                        <li><a class="s-M -ws-n" href="plan.html">FREE PLAN</a></li>
+                        <li class="active"><a class="s-M -ws-n" href="plan.html">FREE PLAN</a></li>
                         <li><a class="s-M -ws-n" href="setsubi.html">EQUIPMENT</a></li>
-                        <li class="active"><a class="s-M -ws-n" href="location.html">LOCATION</a></li>
+                        <li><a class="s-M -ws-n" href="location.html">LOCATION</a></li>
                         <li><a class="s-M -ws-n" href="qualty.html">QUALTY</a></li>
                     </ul>
                 </li>
@@ -79,16 +80,6 @@
     </div>
     <!-- footer / 固定 -->
     <div class="sp c-fixed -btm">
-        <!-- <ul class="c-flex -col04">
-            <li>
-                <label class="popup popup-open" for="popup">
-                    <img src="images/SVG/gaiyou.svg" alt="物件概要">
-                </label>
-            </li>
-            <li><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712894369"><img src="images/btn/sp_btm_btn02.jpg" alt="資料請求"></a></li>
-            <li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712894369"><img src="images/btn/sp_btm_btn03.jpg" alt="来場予約"></a></li>
-            <li><a href="tel:0120-29-8815"><img src="images/btn/sp_btm_btn04.jpg" alt="電話番号 0120-29-8815"></a></li>
-        </ul> -->
         <div class="c-contents -imgBg">
             <div class="imgBox"><img src="images/btn/sp_btm_btnBg.jpg" alt=""></div>
             <div class="c-contentsBox -gaiyouBtn">
@@ -102,48 +93,66 @@
     </div>
 
     <main class="c-container mgt10 mgt11s mgb10 mgb10s">
-        <!-- location-f-view -->
+        <!-- plan-f-view -->
         <div class="c-contents -content05 -f-view">
             <div class="contentBox">
-                <img class="pc" src="images/bg/location-f-view.jpg" alt="DAILY-USE 物件の周辺環境について">
-                <img class="sp"    src="images/bg/location-f-view_s.jpg" alt="DAILY-USE 物件の周辺環境について">
+                <img class="pc"    src="images/bg/plan-f-view.jpg"   alt="自由設計について">
+                <img class="sp"    src="images/bg/plan-f-view_s.jpg" alt="自由設計について">
             </div>
         </div>
-        <!--買い物＆食事処 / location-content01 -->
-        <div class="c-contents -content05 mgb5">
-            <div class="contentBox">
-                <img class="pc" src="images/bg/location-content01.jpg"  alt="買い物＆食事処">
-                <img class="sp" src="images/bg/location-content01s.jpg" alt="買い物＆食事処">
-            </div>
-        </div>
-        <!-- 学び舎＆公園 / location-content02 -->
-        <div class="c-contents -content05 mgb5">
-            <div class="contentBox">
-                <img class="pc" src="images/bg/location-content02.jpg"  alt="学び舎＆公園">
-                <img class="sp" src="images/bg/location-content02s.jpg" alt="学び舎＆公園">
-            </div>
-        </div>
-        <!-- 交通 / location-content03 -->
+        <!--自由設計の家は決して難しくない / plan-content01 -->
         <div class="c-contents -content05 -gray">
             <div class="contentBox">
-                <img class="pc" src="images/bg/location-content03.png"  alt="交通 | 直通の「池袋」をはじめ、地下鉄乗り入れでますます便利になった交通アクセス">
-                <img class="sp" src="images/bg/location-content03s.png" alt="交通 | 直通の「池袋」をはじめ、地下鉄乗り入れでますます便利になった交通アクセス">
+                <img class="pc" src="images/bg/plan-content01.png"  alt="自由設計の家は決して難しくない、皆さんにそう思ってほしいと考えています。">
+                <img class="sp" src="images/bg/plan-content01s.png" alt="自由設計の家は決して難しくない、皆さんにそう思ってほしいと考えています。">
             </div>
         </div>
-        <!-- 最寄り駅 / location-content04 -->
-        <div class="c-contents -content05">
+        <!--住協が選ばれる理由 / plan-content02 -->
+        <div class="c-contents mgb10s">
             <div class="contentBox">
-                <img class="pc" src="images/bg/location-content04.jpg"  alt="交通 | 直通の「池袋」をはじめ、地下鉄乗り入れでますます便利になった交通アクセス">
-                <img class="sp" src="images/bg/location-content04s.jpg" alt="交通 | 直通の「池袋」をはじめ、地下鉄乗り入れでますます便利になった交通アクセス">
+                <img class="pc" src="images/bg/plan-content02.jpg"  alt="住協が選ばれる理由">
+                <img class="sp" src="images/bg/plan-content02s.jpg" alt="住協が選ばれる理由">
             </div>
         </div>
-        <!-- 物件エントリーで・・・/ location-content05 -->
-        <div class="c-contents -content05 -gray mgb10 mgb10s">
-            <div class="contentBox">
-                <img class="pc" src="images/bg/location-content05.png"  alt="交通 | 直通の「池袋」をはじめ、地下鉄乗り入れでますます便利になった交通アクセス">
-                <img class="sp" src="images/bg/location-content05s.png" alt="交通 | 直通の「池袋」をはじめ、地下鉄乗り入れでますます便利になった交通アクセス">
+        <!-- swiper / 施工例 -->
+        <div class="c-contents -imgBg w1200 pdt5 mgb10">
+            <img class="pc mgb5" src="images/bg/plan-sliderTitle.jpg"   alt="当社施工事例">
+            <img class="sp w90s mgb5s" src="images/bg/plan-sliderTitle_s.jpg" alt="当社施工事例">
+            <div class="swiper swiper-Build w90s mgb10s">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="images/slider/freeplan-pic01.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 1/5"><img src="images/slider/freeplan-pic01.png" alt="施工事例　1/5"/></a></div>
+                    <div class="swiper-slide"><a href="images/slider/freeplan-pic02.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 2/5"><img src="images/slider/freeplan-pic02.png" alt="施工事例　2/5"/></a></div>
+                    <div class="swiper-slide"><a href="images/slider/freeplan-pic03.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 3/5"><img src="images/slider/freeplan-pic03.png" alt="施工事例　3/5"/></a></div>
+                    <div class="swiper-slide"><a href="images/slider/freeplan-pic04.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 4/5"><img src="images/slider/freeplan-pic04.png" alt="施工事例　4/5"/></a></div>
+                    <div class="swiper-slide"><a href="images/slider/freeplan-pic05.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 5/5"><img src="images/slider/freeplan-pic05.png" alt="施工事例　5/5"/></a></div>
+                </div>
+                <div class="sp swiper-button-prev"></div>
+                <div class="sp swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <!-- ”自由設計”ならではの暮らした / plan-content03 -->
+        <div class="c-contents -imgBg mgb10 mgb10s">
+            <div class="imgBox">
+                <img class="pc" src="images/bg/plan-content03.jpg"  alt="「自由設計」ならではの暮らしに合わせたスペシャルなプランニングが可能に">
+                <img class="sp" src="images/bg/plan-content03s.jpg" alt="「自由設計」ならではの暮らしに合わせたスペシャルなプランニングが可能に">
+            </div>
+            <div class="c-contentsBox -planBtn">
+                <a href="https://www.jyukyo-cnst.co.jp/house/works/order/"><img src="images/btn/planBtn.png" alt="施工事例をもっと見る"></a>
             </div>
         </div>
+        <!-- 同じ間取でも / plan-content04 -->
+        <div class="c-contents -imgBg mgb10 mgb10s">
+            <div class="imgBox">
+                <img class="pc" src="images/bg/plan-content04.jpg"  alt="同じ間取でも、様々な外観にカスタマイズ。">
+                <img class="sp" src="images/bg/plan-content04s.jpg" alt="同じ間取でも、様々な外観にカスタマイズ。">
+            </div>
+            <div class="c-contentsBox -planBtn02">
+                <a href="https://www.jyukyo-cnst.co.jp/house/works/order/"><img src="images/btn/planBtn02.png" alt="詳しくはコチラ"></a>
+            </div>
+        </div>
+
         <!-- お問合せ -->
         <ul class="c-flex -column2 w1100 w90s mgb10 mgb10s">
             <li class="mgb3s">
@@ -215,15 +224,62 @@
                 </div>
     <!-- //固定アイテム -->
     <script>
-        var mainSwiper = new Swiper(".swiperMain", {
-            effect: 'fade',
-            autoplay: true,
+        const FviewSwiper = new Swiper(".swiperBuild", {
+            // effect: 'fade',
+            centeredSlides: true,
+            slidesPerView: 3,
+            fadeEffect: {crossFade: true,},
             loop: true,
+            speed: 3000,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                waitForTransition: true,
+            },
+            grabCursor: true,
+            followFinger: false,
             pagination: {
-                el: '.swiper-pagination', // ページネーションを表示する要素
-                clickable: true, // ページをクリック可能にする
+                el: '.swiper-Fview .swiper-pagination',
+                clickable: true,
             },
         });
+        // 施工例スライダー
+        const buildSwiper = new Swiper(".swiper-Build", {
+            centeredSlides: true,
+            slidesPerView: 1,
+            fadeEffect: {crossFade: true,},
+            loop: true,
+            speed: 3000,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                waitForTransition: true,
+            },
+            grabCursor: true,
+            followFinger: false,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: '.swiper-Fview .swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {slidesPerView: 3,},
+                980: {slidesPerView: 3,},
+            }
+        });
+        // ポップアップ
+        var luminousTrigger = document.querySelectorAll('.luminous');
+        var options = {
+            caption: function (trigger) {
+                return trigger.querySelector('img').getAttribute('alt');
+            },
+        }
+        if( luminousTrigger !== null ) {
+            new LuminousGallery(luminousTrigger,{},options);
+        }
     </script>
 </body>
 </html>
